@@ -1,0 +1,19 @@
+{
+    "name": "Autelis-Pentair",
+    "docs": "https://github.com/Goose66/autelis-pentair-polyglotv2",
+    "type": "python3",
+    "executable": "autelis-poly.py",
+    "install": "install.sh",
+    "description": "Accesses the Austelis Pool Control module for Pentair Intellitouch/EasyTouch/SunTouch to allow ISY 994i to control pool functions.",
+    "notice": "Intellitouch®, EasyTouch®, and SunTouch® are registered trademarks of Pentair, Ltd.",
+    "credits": [
+        {
+            "title": "autelis-poly: a Polyglot NodeServer for Autelis Pool Control Integration",
+            "author": "W. Randy King (Goose66)",
+            "version": "0.1.0",
+            "date": "April 1, 2018",
+            "source": "https://github.com/Goose66/autelis-pentair-polyglotv2",
+            "license": "https://github.com/Goose66/autelis-pentair-polyglotv2/master/LICENSE"
+        }
+    ]
+}

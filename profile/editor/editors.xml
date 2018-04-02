@@ -1,0 +1,50 @@
+<editors>
+  <!-- ISY Bool UOM -->
+  <editor id="ACN_BOOL">
+    <range uom="2" subset="0,1" />
+  </editor>
+  <!-- ISY Index UOM with custom labels for Pentair Intellitouch controller states in NLS -->
+  <editor id="ACN_RUNSTATE">
+    <range uom="25" subset="1-50" nls="IX_ACN_RUNSTATE" />
+  </editor>
+  <!-- ISY Index UOM with custom labels in NLS -->
+  <editor id="ACN_OPMODE">
+    <range uom="25" subset="0,1" nls="IX_ACN_OPMODE" />
+  </editor>
+  <!-- ISY Index UOM with custom labels in NLS -->
+  <editor id="ACN_FREEZE">
+    <range uom="25" subset="0,1" nls="IX_ACN_FREEZE" />
+  </editor>
+  <!-- ISY Index UOM with custom labels in NLS -->
+  <editor id="ACN_SENSOR">
+    <range uom="25" subset="0,1" nls="IX_ACN_SENSOR" />
+  </editor>
+  <!-- ISY Index UOM with custom labels in NLS -->
+  <editor id="AEQ_ST">
+    <range uom="25" subset="0,1" nls="IX_AEQ_ST" />
+  </editor>
+  <!-- ISY Farenheit UOM -->
+  <editor id="ATC_F_TEMP">
+    <range uom="17" prec="0" />
+  </editor>
+  <!-- ISY Celcius UOM -->
+  <editor id="ATC_C_TEMP">
+    <range uom="4" prec="0" />
+  </editor>
+  <!-- ISY Farenheit UOM with Pentair Intellitouch limits for setpoints-->
+  <editor id="ATC_F_SETPOINT">
+    <range uom="17" min="40" max="104" step="1" prec="0" />
+  </editor>
+  <!-- ISY Celcius UOM with Pentair Intellitouch limits for setpoints -->
+  <editor id="ATC_C_SETPOINT">
+    <range uom="4" min="4" max="40" step="1" prec="0" />
+  </editor>
+  <!-- ISY Thermostat mode UOM limited to "Off," "Heat," "Auto," and "Aux Heat"-->
+  <editor id="ATC_MODE">
+    <range uom="67" subset="0,1,3,4"  nls="IX_ATC_MODE" />
+  </editor>
+  <!-- ISY Thermostat heat/cool state UOM limited to "Idle," "Heating," and "Aux Heat" -->
+  <editor id="ATC_HCS">
+    <range uom="66" subset="0,1,7" nls="IX_AEQ_HCS" />
+  </editor>
+</editors>

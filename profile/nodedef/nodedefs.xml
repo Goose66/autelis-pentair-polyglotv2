@@ -1,0 +1,73 @@
+<nodeDefs>
+  <nodeDef id="CONTROLLER" nls="ACN">
+    <sts>
+      <st id="ST" editor="ACN_BOOL" />
+      <st id="GV0" editor="ACN_RUNSTATE" />
+      <st id="GV1" editor="ACN_OPMODE" /> 
+      <st id="GV2" editor="ACN_FREEZE" /> 
+      <st id="GV3" editor="ACN_SENSOR" /> 
+      <st id="GV4" editor="ACN_SENSOR" /> 
+      <st id="GV5" editor="ACN_SENSOR" /> 
+      <st id="CLITEMP" editor="ATC_F_TEMP" /> 
+      <st id="GV9" editor="ATC_F_TEMP" />
+    </sts>
+    <cmds>
+      <sends />
+      <accepts>
+        <cmd id="QUERY" />
+      </accepts>
+    </cmds>
+  </nodeDef>
+  <nodeDef id="EQUIPMENT" nls="AEQ">
+    <sts>
+      <st id="ST" editor="AEQ_ST" />
+    </sts>
+    <cmds>
+      <sends />
+      <accepts>
+        <cmd id="DON" />
+        <cmd id="DOF" />
+      </accepts>
+    </cmds>
+  </nodeDef>
+  <nodeDef id="TEMP_CONTROL" nls="ATC">
+    <sts>
+      <st id="ST" editor="ATC_F_TEMP" />
+      <st id="CLISPH" editor="ATC_F_SETPOINT" />
+      <st id="CLIMD" editor="ATC_MODE" />
+      <st id="CLIHCS" editor="ATC_HCS" />
+      <st id="CLISPC" editor="ATC_F_SETPOINT" hide="T" />
+    </sts>
+    <cmds>
+      <sends />
+      <accepts>
+        <cmd id="SET_MODE">
+          <p id="" editor="ATC_MODE" init="CLIMD" />
+        </cmd>
+        <cmd id="SET_SPH">
+          <p id="" editor="ATC_F_SETPOINT" init="CLISPH" />
+        </cmd>
+      </accepts>
+    </cmds>
+  </nodeDef>
+  <nodeDef id="TEMP_CONTROL_C" nls="ATC">
+    <sts>
+      <st id="ST" editor="ATC_C_TEMP" />
+      <st id="CLISPH" editor="ATC_C_SETPOINT" />
+      <st id="CLIMD" editor="ATC_MODE" />
+      <st id="CLIHCS" editor="ATC_HCS" />
+      <st id="CLISPC" editor="ATC_C_SETPOINT" hide="T" />
+    </sts>
+    <cmds>
+      <sends />
+      <accepts>
+        <cmd id="SET_MODE">
+          <p id="" editor="ATC_MODE" init="CLIMD" />
+        </cmd>
+        <cmd id="SET_SPH">
+          <p id="" editor="ATC_C_SETPOINT" init="CLISPH" />
+        </cmd>
+      </accepts>
+    </cmds>
+  </nodeDef>
+</nodeDefs>
